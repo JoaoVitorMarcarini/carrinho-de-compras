@@ -1,3 +1,7 @@
+document.getElementById('lista-produtos').innerHTML = ''
+document.getElementById('valor-total').innerHTML = 'R$ 0'
+
+
 function adicionar(){
     let produto = document.getElementById('produto').value;
     let quantidade = document.getElementById('quantidade');
@@ -28,10 +32,7 @@ function adicionar(){
 }
 
 function limpar(){
-    let carrinho = document.getElementById('lista-produtos')
-    carrinho.textContent = ""
-    let valorTotal = document.getElementById('valor-total')
-    valorTotal.innerHTML = 'R$0'
-    console.log()
+    document.getElementById('lista-produtos').innerHTML = ''
+    document.getElementById('valor-total').innerHTML = 'R$ 0'
 }
 
